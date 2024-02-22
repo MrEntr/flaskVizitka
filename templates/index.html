@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка транспортной компании</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Транспортная компания XDEK</h1>
+        <form action="/submit" method="post">
+            <label for="fullname">ФИО:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Фамилия, Имя, Отчество" required>
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" placeholder="" required>
+            <label for="weight">Вес посылки (кг):</label>
+            <input type="number" id="weight" name="weight" min="1" required>
+            <p id="shippingCost">Стоимость доставки:</p>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="static/sum.js"></script>
+</body>
+</html>
